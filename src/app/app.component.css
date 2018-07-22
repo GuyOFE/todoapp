@@ -1,0 +1,44 @@
+
+
+
+.header {
+	 border-radius: 5px; 
+     padding-top: 100px;
+     text-align: center;
+}
+
+
+.todoapp {
+	
+	background-color: beige;
+}
+.main {
+	/*position: relative;*/
+}
+.footer {
+	padding-left: 35%;
+}
+.todo-list {
+    /*list-style-position:inside;*/
+    border: 1px solid black;
+}
+h1 {
+   text-shadow: 0 1px 0 black, 0 -1px 0 black, 1px 0 0 black, -1px 0 0 black;
+   color: blue;
+   font-size: 50px;
+}
+input {
+	margin-right: 10px;
+	padding: 5px;
+}
+ul {
+  padding-left: 35%;
+}
+li {
+ 	/*display: inline-block;*/
+}
+label {
+	display: inline-block;
+    float: left;
+    width: 200px;
+}
