@@ -21,11 +21,6 @@ export class AppComponent {
     this.newTodo = new Todo();
   }
 
-  addUpdatePriority(todo) {
-    this.todoDataService.addUpdatePriority(todo);
-  }
-
-
   toggleTodoComplete(todo) {
     this.todoDataService.toggleTodoComplete(todo);
   }
@@ -38,4 +33,7 @@ export class AppComponent {
     return this.todoDataService.getAllTodos();
   }
 
+  missingFields() {
+    return !this.newTodo.title || !this.newTodo.priority;
+  }
 }

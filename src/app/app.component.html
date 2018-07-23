@@ -3,7 +3,7 @@
     <h1>Todos</h1>
     <input class="new-todo" placeholder="What needs to be done?" autofocus="" [(ngModel)]="newTodo.title">
     <input class="new-priority" placeholder="What is the priority?" [(ngModel)]="newTodo.priority">
-    <button class="add" (click)="addTodo()">Add</button>
+    <button class="add" [disabled]="missingFields()" (click)="addTodo()">Add</button>
     
   </header>
 

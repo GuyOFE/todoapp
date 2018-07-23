@@ -23,11 +23,6 @@ export class TodoDataService {
     return this;
   }
 
-  // Simulate UPDATE /todos
-  addUpdatePriority(todo: Todo) {
-    todo.priority = 5;
-  }
-
   // Simulate DELETE /todos/:id
   deleteTodoById(id: number): TodoDataService {
     this.todos = this.todos

@@ -2,7 +2,7 @@ export class Todo {
   id: number;
   title: string = '';
   complete: boolean = false;
-  priority: number;
+  priority: string;
 
   constructor(values: Object = {}) {
     Object.assign(this, values);
