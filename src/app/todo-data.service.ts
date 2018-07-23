@@ -20,14 +20,16 @@ export class TodoDataService {
       todo.id = ++this.lastId;
     }
     this.todos.push(todo);
+    localStorage.setItem('todoList',JSON.stringify(this.todos);
     return this;
-  }
+  }   
 
   // Simulate DELETE /todos/:id
   deleteTodoById(id: number): TodoDataService {
     this.todos = this.todos
       .filter(todo => todo.id !== id);
-    return this;
+    localStorage.setItem('todoList',JSON.stringify(this.todos);
+    return this.todos;
   }
 
   // Simulate PUT /todos/:id
@@ -42,6 +44,7 @@ export class TodoDataService {
 
   // Simulate GET /todos
   getAllTodos(): Todo[] {
+    this.todos = JSON.parse(localStorage.getItem('todoList'));
     return this.todos;
   }
 
